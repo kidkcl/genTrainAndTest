@@ -1,0 +1,20 @@
+{
+  "name": "trainandtest",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:clientDev": "cd client && npm run build -- --watch",
+    "build:client": "cd client && npm install && npm run build",
+    "build:serverDev": "cd server && npm i && npm start",
+    "build:server": "cd server && npm install",
+    "build": "npm run build:server",
+    "start": "cd server && npm start",
+    "deploy": "npm run build:client && now"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "now": "^5.2.3"
+  }
+}
